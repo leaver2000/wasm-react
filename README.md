@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + WASM
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -29,7 +29,13 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+## WebAssembly
+
+This repo was built using `npm create vite@latest` and bootstrapped with a simple Rust WebAssembly example.
+
 ```bash
+cargo install wasm-pack
 wasm-pack build --target web
 npm install -i
+npm run dev
 ```
